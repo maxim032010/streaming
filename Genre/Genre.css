@@ -1,0 +1,209 @@
+body {
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle:hover {
+    border-color: orange;
+  }
+  
+  .circle img {
+    max-width: 50%;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  .links a:hover,
+  .links a.active {
+    color: #ff6600;
+  }
+  
+  aside {
+    background-color: #333;
+    padding: 20px;
+    width: 200px;
+    position: fixed; /* Verändert von absolute zu fixed */
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .categories h3,
+  .genres h3 {
+    color: #ff6600;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  .genres a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .genres a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    margin-left: 240px;
+    padding: 20px;
+    min-height: 100vh; /* Mindesthöhe des Hauptinhalts auf 100% der Bildschirmhöhe */
+    box-sizing: border-box; 
+  }
+  
+  .circle img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navigation span {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .container {
+    width: 300px;
+    display: inline-block;
+    margin: -20px; /* Hier habe ich den Abstand auf 20px erhöht, du kannst den Wert anpassen */
+    position: relative;
+    margin-top: 20px;
+    right: -30px;
+  }
+  
+  
+  .image-box {
+    margin: 0 10px;
+  }
+  
+  .image-box img {
+    width: 250px; /* Hier die gewünschte Breite eintragen */
+    height: 350px; /* Hier die gewünschte Höhe eintragen */
+    border-radius: 10px;
+    border: 0.1px solid white;
+  }
+  
+  .mlink {
+    color: #fff;
+  }
+  
+  
+  .mlink:hover {
+    color: #FF5733;
+  }
+  
+  .genres ul li a .mlink { color: #fff; }
+  
+  
+  .genres ul li a .mlink:hover { color: #FF5733; }
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin: 5px 0;
+  }
+  
+  .categories a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .categories a:hover {
+    text-decoration: underline;
+  }
+  
+  .container:hover .image-box img {
+    filter: brightness(80%); /* Dunkle das Poster bei Hover ein wenig ab */
+  }
+  
+  .categories ul li a:hover,
+  .categories ul li a.active {
+    color: #ff6600;
+  }
+
+  .genres ul li a:hover,
+  .genres ul li a.active { color: #ff6600; }
+
+  .logout-button {
+    background-color: #FF5733; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    border: 1px solid black; /* Kein Rahmen */
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Zeige Handzeiger beim Überfahren */
+    border-radius: 20px; /* Runde Ecken */
+  }
+  
+  .logout-button:hover {
+    background-color: #FF4500; /* Hintergrundfarbe beim Überfahren */
+  }
+  
+  .thin-line {
+    border: none;
+    border-top: 1px solid grey; /* Farbe der Linie */
+    margin: 10px 0; /* optional: Abstand über und unter der Linie */
+  }
+
+  .logout-button {
+    background-color: #FF5733; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    border: 1px solid black; /* Kein Rahmen */
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Zeige Handzeiger beim Überfahren */
+    border-radius: 20px; /* Runde Ecken */
+  }
+  
+  .logout-button:hover {
+    background-color: #FF4500; /* Hintergrundfarbe beim Überfahren */
+  }
+  
+  .thin-line {
+    border: none;
+    border-top: 1px solid grey; /* Farbe der Linie */
+    margin: 10px 0; /* optional: Abstand über und unter der Linie */
+  }

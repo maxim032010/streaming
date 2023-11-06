@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <title>Home</title>
+    <link rel="shortcut icon" href="../bilder/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <nav>
+
+        <div class="navigation">
+          <span>CineView</span>
+        </div>
+
+        <div class="links">
+          <a href="home.html" class="active">Home</a>
+          <a href="../Kategorien/Filme.html">Filme</a>
+          <a href="../Kategorien/Kinofilme.html">Kinofilme</a>
+          <a href="../Kategorien/Animationen.html">Animationen</a>
+        </div>
+
+        <div class="burger-icon" onclick="toggleAsideMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>        
+
+        <div class="logo">
+          <div class="circle">
+            <a href="../search/search.html">
+              <img src="../bilder/lupe.png" alt="Lupe">
+            </a>
+          </div>          
+        </div>
+    </nav>
+
+    <aside>
+        <div class="categories">
+            <h3>Kategorien</h3>
+            <ul>
+                <li><a href="../Kategorien/Filme.html" class="mlink">Filme</a></li>
+                <li><a href="../Kategorien/Kinofilme.html" class="mlink">Kinofilme</a></li>
+                <li><a href="../Kategorien/Animationen.html" class="mlink">Animationen</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+        
+        <div class="genres">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="../Genre/Action.html" class="mlink">Action</a></li>
+                <li><a href="../Genre/Adventure.html" class="mlink">Adventure</a></li>
+                <li><a href="../Genre/Comedy.html" class="mlink">Comedy</a></li>
+                <li><a href="../Genre/Crime.html" class="mlink">Crime</a></li>
+                <li><a href="../Genre/Drama.html" class="mlink">Drama</a></li>
+                <li><a href="../Genre/Family.html" class="mlink">Family</a></li>
+                <li><a href="../Genre/Fantasy.html" class="mlink">Fantasy</a></li>
+                <li><a href="../Genre/History.html" class="mlink">History</a></li>
+                <li><a href="../Genre/Horror.html" class="mlink">Horror</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <h5><p>Angemeldet als:</p><span id="angemeldeteEmail"></span></h5>
+
+        <button class="logout-button" onclick="logout()">Abmelden</button>
+
+
+    </aside>
+
+    <main>
+      
+      <div class="container">
+        <div class="image-box">
+          <a href="../filme/Elemental/elemental.html">
+            <img src="../bilder/elemental.png" alt="Elemental Film" loading="lazy">
+          </a>
+        </div>
+      </div>
+    
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Gran-Turismo/Gran-Turismo.html">
+            <img src="../bilder/Gran-Turismo.png" alt="Gran-Turismo Film" loading="lazy">
+          </a>
+        </div>
+      </div>
+    
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Die Eiskönigin - 1/Die Eiskönigin - 1.html">
+            <img src="../bilder/Die Eiskönigin - 1.png" alt="Die Eiskönigin Film" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Die Eiskönigin 2/Die Eiskönigin 2.html">
+            <img src="../bilder/Die Eiskönigin - 2.png" alt="Die Eiskönigin Film" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/CREED III/CREED III.html">
+            <img src="../bilder/CREED III.png" alt="CREED III" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Minions 2/Minions 2.html">
+            <img src="../bilder/Minions 2.png" alt="Minions 2" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Ich Einfach unverbesserlich 2/Ich Einfach unverbesserlich 2.html">
+            <img src="../bilder/Ich Einfach Unverbesserlich 2.png" alt="Ich Einfach unverbesserlich 2" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Ich Einfach unverbesserlich 3/Ich Einfach unverbesserlich 3.html">
+            <img src="../bilder/Ich Einfach Unverbesserlich 3.png" alt="Ich Einfach unverbesserlich 3" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/five nights at freddys/five nights at freddys.html">
+            <img src="../bilder/five nights at freddys .png" alt="five nights at freddys" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+      <div class="container">  
+        <div class="image-box">
+          <a href="../filme/Super Mario Bros/Super Mario Bros.html">
+            <img src="../bilder/Super Mario Bros.png" alt="Super Mario Bros" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+    </main>
+    
+</body>
+</html>

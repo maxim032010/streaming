@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="elemental.css">
+    <title>elemental Film</title>
+    <link rel="shortcut icon" href="../../bilder/elemental.png" type="image/svg+xml">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('scrollButton').addEventListener('click', function() {
+        const targetElement = document.getElementById('video');
+        const targetPosition = targetElement.offsetTop;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+    <script src="../filme.js"></script>
+</head>
+<body>
+    <nav>
+
+        <div class="navigation">
+          <span>Home-server</span>
+        </div>
+
+        <div class="links">
+            <a href="../../Home/home.html">Home</a>
+            <a href="../../Kategorien/Filme.html">Filme</a>
+            <a href="../../Kategorien/Kinofilme.html">Kinofilme</a>
+            <a href="../../Kategorien/Animationen.html">Animationen</a>
+        </div>
+
+        <div class="logo">
+          <div class="circle">
+            <a href="../../search/search.html">
+              <img src="../../bilder/lupe.png" alt="Lupe">
+            </a>
+          </div>          
+        </div>
+    </nav>
+
+    <aside>
+
+        <div class="categories">
+            <h3>Kategorien</h3>
+            <ul>
+                <li><a href="../../Kategorien/Filme.html" class="mlink">Filme</a></li>
+                <li><a href="../../Kategorien/Kinofilme.html" class="mlink">Kinofilme</a></li>
+                <li><a href="../../Kategorien/Animationen.html" class="mlink">Animationen</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <div class="genres">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="../../Genre/Action.html" class="mlink">Action</a></li>
+                <li><a href="../../Genre/Adventure.html" class="mlink">Adventure</a></li>
+                <li><a href="../../Genre/Comedy.html" class="mlink">Comedy</a></li>
+                <li><a href="../../Genre/Crime.html" class="mlink">Crime</a></li>
+                <li><a href="../../Genre/Drama.html" class="mlink">Drama</a></li>
+                <li><a href="../../Genre/Family.html" class="mlink">Family</a></li>
+                <li><a href="../../Genre/Fantasy.html" class="mlink">Fantasy</a></li>
+                <li><a href="../../Genre/History.html" class="mlink">History</a></li>
+                <li><a href="../../Genre/Horror.html" class="mlink">Horror</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <h5><p>Angemeldet als:</p><span id="angemeldeteEmail"></span></h5>
+
+        <button class="logout-button" onclick="logout()">Abmelden</button>
+    </aside>
+
+    <main>
+        <div class="container">
+            <div class="image-box">
+                <img src="../../bilder/elemental.png" alt="Elemental">
+                <div class="age-limit">16+</div>
+                <div class="HD">HD</div>
+                <div class="info">
+
+                    <h2>Elemental</h2>
+
+                    <h7>ELEMENTAL</h7><br><br>
+
+
+                    <p>United States of America, 2023, 102 min</p>
+
+                    <p><font size="2">Filme / Animation / Comedy / Family / Fantasy / Romance </font></p><br>
+
+                    <div class="Director">Director : Peter Sohn</div><br>
+
+                    <div class="stars"><p>Stars:</p>
+                        <p>Leah Lewis, Mamoudou Athie, Ronnie del Carmen,</p>
+                        <p>Shila Ommi,Wendi McLendon-Covey, Catherine O'Hara,</p>
+                        <p>Mason Wertheimer,Ronobir Lahiri, Wilma Bonet,</p>
+                        <p>Joe Pera, Matthew Yang King,Clara Lin Ding,</p>
+                        <p>Reagan To, Jeff Lapensee, Ben Morris,</p>
+                            <p>Adams, Alex Kapp, P.L. Brown</p><br>
+
+                    <div class="Production">
+                        <p>Production:</p><p>Walt Disney Pictures, Pixar</p><br><br>
+                    </div>        
+
+                            <button id="scrollButton">zum Film</button>
+                        </div>
+                    </div>
+                </div>
+    </main>
+
+    <div class="streifen"></div>
+
+    <br>
+
+    <div class="Beschreibung">
+        <h1>Inhaltsangabe</h1>
+        <p>In Element City leben zahlreiche Wesen, die von einem der vier Elemente</p>
+        <p>Wasser, Erde, Luft und Feuer abstammen, zusammen auf einem Haufen.</p>
+        <p>Das schlagfertige Feuermädchen Ember Lumen (Stimme im Original: Leah Lewis)</p>
+        <p>und der lässige Wasserjunge Wade Ripple (Mamoudou Athie) können jedoch zunächst</p>
+        <p>nicht viel miteinander anfangen. Zu unterschiedlich glauben sie zu sein.</p>
+        <p>Sowas wie Freundschaft scheint ein Ding der Unmöglichkeit. Feuer und Wasser</p>
+        <p>zusammen, wie soll das auch funktionieren? Doch dann verbringen die beiden immer</p>
+        <p>und immer mehr Zeit miteinander. Dabei stellen sie fest, dass sie vielleicht doch</p>
+        <p>um einiges mehr als zuerst gedacht gemeinsam haben – und das es um mehr als nur</p>
+        <p>Freundschaft geht. Vielmehr sprühen im wahrsten Sinne des Wortes die Funken zwischen</p>
+        <p>den beiden. Es scheint, als ob sich Gegensätze tatsächlich anziehen und das kein dummer Spruch ist…</p>
+    </div>
+
+    <br>
+
+    <div class="streifen"></div>
+
+    <div class="trailer">
+        <p>Trailer:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1u4MSQ7YByg?si=EQCWqKlqDzTVV-mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="streifen"></div>
+    
+
+    <div class="video" id="video">
+        <p>Streami in HD:</p>
+        <iframe width="640" height="360" src="https://mp4player.site/watch?v=SYC3TIW5" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>    

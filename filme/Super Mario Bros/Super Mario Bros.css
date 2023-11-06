@@ -1,0 +1,280 @@
+body {
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle img {
+    max-width: 50%;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  .links a:hover {
+    color: #ff6600;
+  }
+  
+    aside {
+      background-color: #333;
+      padding: 20px;
+      width: 200px;
+      position: fixed; /* Verändert von absolute zu fixed */
+      height: 100vh;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+      transition: transform 0.5s ease;
+    }
+    
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  main {
+    margin-left: 240px;
+    padding: 20px;
+    min-height: 100vh; /* Mindesthöhe des Hauptinhalts auf 100% der Bildschirmhöhe */
+    box-sizing: border-box; 
+  }
+  
+  .circle img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navigation span {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .film-poster {
+    position: relative;
+    width: 200px; /* Hier die gewünschte Breite des Posters eintragen */
+    height: 300px; /* Hier die gewünschte Höhe des Posters eintragen */
+    background-image: url('elemental.png'); /* Hier den Pfad zu deinem Poster-Bild eintragen */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-box {
+    margin: 0 10px; /* Abstand zwischen den Bildern anpassen */
+    display: flex; /* Damit die Elemente nebeneinander angezeigt werden */
+    align-items: center; /* Vertikale Ausrichtung zentrieren */
+  }
+  
+  .image-box img {
+    width: 400px; /* Hier die gewünschte Breite eintragen */
+    height: 565px; /* Hier die gewünschte Höhe eintragen */
+    max-width: 100%; /* Das Bild sollte die Breite des Containers nicht überschreiten */
+    margin-right: 10px; /* Abstand zwischen Bild und Text */
+  }
+  
+  .age-limit {
+    position: relative;
+    border: 2px solid grey;
+    top: -230px;
+    right: -425px;
+    background-color: transparent;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .image-box .info {
+    flex-grow: 1;
+  }
+  
+  .info h2, .info p {
+    margin: 0;
+  }
+  
+  .video-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe für den Text */
+    color: #fff; /* Textfarbe */
+    padding: 10px; /* Innenabstand für den Text */
+    width: 100%;
+    text-align: center; /* Text in der Mitte ausrichten */
+  }
+  
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hier wird die Höhe des Containers auf 100% der Bildschirmhöhe gesetzt */
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .HD {
+    position: relative;
+    top: -265px;
+    right: 460px;
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hier wird die Höhe des Containers auf 100% der Bildschirmhöhe gesetzt */
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .trailer p { font-size: 18px; }
+  
+  iframe {
+    width: 360px; /* Beispiel: Setzt die Breite des Iframes auf 560 Pixel */
+    height: 115px; /* Beispiel: Setzt die Höhe des Iframes auf 315 Pixel */
+  }
+  
+  .video p { 
+    font-size: 18px;
+  }
+  
+  iframe {
+    width: 560px; /* Beispiel: Setzt die Breite des Iframes auf 560 Pixel */
+    height: 315px; /* Beispiel: Setzt die Höhe des Iframes auf 315 Pixel */
+  }
+  
+  .streifen {
+    background-color: rgba(169, 169, 169, 0.5); /* Grau mit 50% Transparenz */
+    height: 50px; /* Höhe des Streifens */
+    width: 100%; /* Volle Breite des Containers */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .categories ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .categories li {
+    margin: 5px 0;
+  }
+  
+  .categories a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .categories a:hover {
+    text-decoration: underline;
+  }
+  
+  #scrollButton {
+    background-color: #FF5733;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
+  .Beschreibung {
+    max-width: 800px;
+    margin: 0 auto; /* Hinzugefügt, um das Element horizontal zu zentrieren */
+    text-align: center; /* Änderung: Text wird jetzt zentriert */
+  }
+  
+  .categories h3,
+  .genres h3 {
+    color: #ff6600;
+  }
+  
+  .genres a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .genres a:hover {
+    text-decoration: underline;
+  }
+  
+  .genres ul li a .mlink { color: #fff; }
+  
+  
+  .genres ul li a:hover { color: #FF5733; }
+
+  .logout-button {
+    background-color: #FF5733; /* Hintergrundfarbe */
+    color: #fff; /* Textfarbe */
+    border: 1px solid black; /* Kein Rahmen */
+    padding: 10px 20px; /* Innenabstand */
+    font-size: 16px; /* Schriftgröße */
+    cursor: pointer; /* Zeige Handzeiger beim Überfahren */
+    border-radius: 20px; /* Runde Ecken */
+  }
+  
+  .logout-button:hover {
+    background-color: #FF4500; /* Hintergrundfarbe beim Überfahren */
+  }
+  
+  .thin-line {
+    border: none;
+    border-top: 1px solid grey; /* Farbe der Linie */
+    margin: 10px 0; /* optional: Abstand über und unter der Linie */
+  }
+  
+  
+  
+  
+  

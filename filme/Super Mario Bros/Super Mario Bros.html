@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Super Mario Bros.css">
+    <title>Super Mario Bros - Film</title>
+    <link rel="shortcut icon" href="../../bilder/Super Mario Bros.png" type="image/svg+xml">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('scrollButton').addEventListener('click', function() {
+        const targetElement = document.getElementById('video');
+        const targetPosition = targetElement.offsetTop;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+    <script src="../filme.js"></script>
+</head>
+<body>
+    <nav>
+
+        <div class="navigation">
+          <span>Home-server</span>
+        </div>
+
+        <div class="links">
+            <a href="../../Home/home.html">Home</a>
+            <a href="../../Kategorien/Filme.html">Filme</a>
+            <a href="../../Kategorien/Kinofilme.html">Kinofilme</a>
+            <a href="../../Kategorien/Animationen.html">Animationen</a>
+        </div>
+
+        <div class="logo">
+          <div class="circle">
+            <a href="../../search/search.html">
+              <img src="../../bilder/lupe.png" alt="Lupe">
+            </a>
+          </div>          
+        </div>
+    </nav>
+
+    <aside>
+
+        <div class="categories">
+            <h3>Kategorien</h3>
+            <ul>
+                <li><a href="../../Kategorien/Filme.html" class="mlink">Filme</a></li>
+                <li><a href="../../Kategorien/Kinofilme.html" class="mlink">Kinofilme</a></li>
+                <li><a href="../../Kategorien/Animationen.html" class="mlink">Animationen</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <div class="genres">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="../../Genre/Action.html" class="mlink">Action</a></li>
+                <li><a href="../../Genre/Adventure.html" class="mlink">Adventure</a></li>
+                <li><a href="../../Genre/Comedy.html" class="mlink">Comedy</a></li>
+                <li><a href="../../Genre/Crime.html" class="mlink">Crime</a></li>
+                <li><a href="../../Genre/Drama.html" class="mlink">Drama</a></li>
+                <li><a href="../../Genre/Family.html" class="mlink">Family</a></li>
+                <li><a href="../../Genre/Fantasy.html" class="mlink">Fantasy</a></li>
+                <li><a href="../../Genre/History.html" class="mlink">History</a></li>
+                <li><a href="../../Genre/Horror.html" class="mlink">Horror</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <h5><p>Angemeldet als:</p><span id="angemeldeteEmail"></span></h5>
+
+        <button class="logout-button" onclick="logout()">Abmelden</button>
+    </aside>
+
+    <main>
+        <div class="container">
+            <div class="image-box">
+                <img src="../../bilder/Super Mario Bros.png" alt="Super Mario Bros">
+                <div class="age-limit">16+</div>
+                <div class="HD">HD</div>
+                <div class="info">
+
+                    <h2>Der Super Mario Bros. Film</h2>
+
+                    <h7>THE SUPER MARIO BROS. MOVIE</h7><br><br>
+
+
+                    <p>Japan, United States of America, 2023, 92 min</p>
+
+                    <p><font size="2">Filme / Animation / Adventure / Comedy / Family / Fantasy</font></p><br>
+
+                    <div class="Director">Director : Michael Jelenic, Aaron Horvath</div><br>
+
+                    <div class="stars"><p>Stars:</p>
+                        <p>Chris Pratt, Anya Taylor-Joy, Charlie Day,</p>
+                        <p>Jack Black, Keegan-Michael Key, Seth Rogen,</p>
+                        <p>Fred Armisen, Kevin Michael Richardson, Sebastian Maniscalco,</p>
+                        <p>Khary Payton, Eric Bauza, Jessica DiCicco,</p>
+                        <p>Jeannie Elias, Juliet Jelenic, Rino Romano,</p>
+                        <p>John DiMaggio, Scott Menville, Charles Martinet,</p>
+                        <p>Jason Broad, Carlos Alazraqui, Ashly Burch,</p>
+                        <p>Rachel Butera, Cathy Cavadini, Will Collyer,</p>
+                        <p>Django Craig, Willow Geer</p><br>
+
+                    <div class="Production">
+                        <p>Production:</p><p>Universal Pictures, Illumination, Nintendo</p><br><br>
+                    </div>    
+
+                            <button id="scrollButton">zum Film</button><br>
+                        </div>
+                </div>
+            </div>
+    </main>
+
+    <div class="streifen"></div>
+
+    <br>
+
+    <div class="Beschreibung">
+        <h1>Inhaltsangabe</h1>
+        <p>Der Klempner Mario (Originalstimme: Chris Pratt) und sein Bruder Luigi (Charlie Day)</p>
+        <p>betreiben relativ erfolglos eine kleine Klempner-Firma. Als Brooklyn unter Wasser steht,</p>
+        <p>sehen die Brüder ihre große Chance gekommen – was gibt es für eine bessere Werbung für einen</p>
+        <p>Klempner-Betrieb als die Rettung eines ganzen Stadtbezirkes vor unerwünschten Wassermassen?</p>
+        <p>Doch es soll alles ganz anders kommen, denn die beiden entdecken in einer mysteriösen grünen</p>
+        <p>Röhre ein Portal in eine magische Welt und landen so unbeabsichtigt im Pilz-Königreich</p>
+        <p>der Martial-Arts-technisch erstaunlich kompetenten Prinzessin Peach (Anya-Taylor Joy).</p>
+        <p>Aber die bunte Pilz-Welt sieht sich mit einer großen Gefahr konfrontiert: Der fiese Schildkröten-König</p>
+        <p>Bowser (Jack Black) will seine Macht ausweiten und das Königreich zerstören. Als er von Luigi</p>
+        <p>getrennt wird, muss Mario mit Hilfe des etwas tollpatschigen Pilzes Toad also nicht nur</p>
+        <p>Bowser zurückschlagen, sondern im selben Moment auch noch seinen verschwundenen Bruder wiederfinden.</p>
+    </div>
+
+    <br>
+
+    <div class="streifen"></div>
+
+    <div class="trailer">
+        <p>Trailer:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XIbbR2CKbZU?si=Lf12JioPXBdxeNkt&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    <div class="streifen"></div>
+    
+
+    <div class="video" id="video">
+        <p>Der Film:</p>
+        <iframe width="640" height="360" src="https://mp4player.site/watch?v=5MBLAX1O" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+   
+</body>
+</html>    

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="search.css">
+    <title>Filme suchen</title>
+    <link rel="shortcut icon" href="../bilder/lupe.png" type="image/svg+xml">
+</head>
+<body>
+    <nav>
+        <div class="navigation">
+          <span>Cineview</span>
+        </div>
+
+        <div class="links">
+          <a href="../Home/home.html">Home</a>
+          <a href="../Kategorien/Filme.html">Filme</a>
+          <a href="../Kategorien/Serien.html">Serien</a>
+          <a href="../Kategorien/Animationen.html">Animationen</a>
+        </div>
+
+        <div class="logo">
+          <div class="circle">
+            <a href="search.html">
+              <img src="../bilder/lupe.png" alt="Lupe">
+            </a>
+          </div>          
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Suche nach Filmen...">
+        <button id="searchButton">Suche</button>
+        <ul id="searchResults"></ul>
+        <div class="error-message" style="display: none;">
+          <p>Es wurden keine Ergebnisse gefunden.</p>
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+    <script>
+      document.getElementById("searchInput").addEventListener("keyup", function(event) {
+          if (event.key === "Enter") {
+              event.preventDefault();
+              document.getElementById("searchButton").click();
+          }
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="Registrieren.css">
+    <script src="Registrieren.js" defer></script>
+</head>
+<body>
+    <div class="error-box" id="error-box" style="display: none;">
+        <div id="error-message" class="error-message">
+            <p>Email , Passwort , Vorname oder Nachname existiert bereits!</p>
+        </div>
+    </div>
+
+    <div class="registrierung-container">
+        <h1 class="registrierung-heading">Registrieren</h1>
+        <form onsubmit="registrieren(event);">
+            <input type="text" class="input-field" id="vorname" placeholder="Vorname" required>
+            <input type="text" class="input-field" id="nachname" placeholder="Nachname" required>
+            <input type="email" class="input-field" id="email" placeholder="Email" required>
+            <input type="password" class="input-field" id="password" placeholder="Passwort" required>
+            <label class="checkbox-label">
+                <input type="checkbox" id="showPassword" class="checkbox-input" onchange="togglePassword()"> Passwort anzeigen
+            </label>
+            <button type="submit" class="registrierung-button">Registrieren</button>
+            <br>
+            <br>
+            <div class="register-link">
+            <a href="../index.html">Zurück zur Anmeldeseite</a>
+            </div>
+        </form>
+        <div id="registrierungs-erfolg" class="success-message"></div>
+    </div>
+</body>
+</html>

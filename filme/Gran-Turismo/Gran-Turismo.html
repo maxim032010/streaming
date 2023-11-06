@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gran-Turismo.css">
+    <title>Gran-Turismo Film</title>
+    <link rel="shortcut icon" href="../../bilder/Gran-Turismo.png" type="image/svg+xml">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('scrollButton').addEventListener('click', function() {
+        const targetElement = document.getElementById('video');
+        const targetPosition = targetElement.offsetTop;
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+    <script src="../filme.js"></script>
+</head>
+<body>
+    <nav>
+
+        <div class="navigation">
+          <span>Home-server</span>
+        </div>
+
+        <div class="links">
+            <a href="../../Home/home.html">Home</a>
+            <a href="../../Kategorien/Filme.html">Filme</a>
+            <a href="../../Kategorien/Kinofilme.html">Kinofilme</a>
+            <a href="../../Kategorien/Animationen.html">Animationen</a>
+        </div>
+
+        <div class="logo">
+          <div class="circle">
+            <a href="../../search/search.html">
+              <img src="../../bilder/lupe.png" alt="Lupe">
+            </a>
+          </div>          
+        </div>
+    </nav>
+
+    <aside>
+
+        <div class="categories">
+            <h3>Kategorien</h3>
+            <ul>
+                <li><a href="../../Kategorien/Filme.html" class="mlink">Filme</a></li>
+                <li><a href="../../Kategorien/Kinofilme.html" class="mlink">Kinofilme</a></li>
+                <li><a href="../../Kategorien/Animationen.html" class="mlink">Animationen</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <div class="genres">
+            <h3>Genres</h3>
+            <ul>
+                <li><a href="../../Genre/Action.html" class="mlink">Action</a></li>
+                <li><a href="../../Genre/Adventure.html" class="mlink">Adventure</a></li>
+                <li><a href="../../Genre/Comedy.html" class="mlink">Comedy</a></li>
+                <li><a href="../../Genre/Crime.html" class="mlink">Crime</a></li>
+                <li><a href="../../Genre/Drama.html" class="mlink">Drama</a></li>
+                <li><a href="../../Genre/Family.html" class="mlink">Family</a></li>
+                <li><a href="../../Genre/Fantasy.html" class="mlink">Fantasy</a></li>
+                <li><a href="../../Genre/History.html" class="mlink">History</a></li>
+                <li><a href="../../Genre/Horror.html" class="mlink">Horror</a></li>
+            </ul>
+        </div>
+
+        <hr class="thin-line">
+
+        <h5><p>Angemeldet als:</p><span id="angemeldeteEmail"></span></h5>
+
+        <button class="logout-button" onclick="logout()">Abmelden</button>
+    </aside>
+
+    <main>
+        <div class="container">
+            <div class="image-box">
+                <img src="../../bilder/Gran-Turismo.png" alt="Gran-Turismo">
+                <div class="age-limit">16+</div>
+                <div class="HD">HD</div>
+                <div class="info">
+
+                    <h2>Gran Turismo</h2>
+
+                    <h7>GRAN TURISMO</h7><br><br>
+
+
+                    <p>United States of America, 2023, 135 min</p>
+
+                    <p><font size="2">Filme / Action / Drama</font></p><br>
+
+                    <div class="Director">Director : Neill Blomkamp</div><br>
+
+                    <div class="stars"><p>Stars:</p>
+                        <p>Archie Madekwe, David Harbour, Orlando Bloom,</p>
+                        <p>Darren Barnet, Geri Halliwell, Djimon Hounsou,</p>
+                        <p>Daniel Puig, Josha Stradowski, Thomas Kretschmann,</p>
+                        <p>Maeve Courtier-Lilley, Emelia Hartford, Pepe Barroso,</p>
+                        <p> Sang Heon Lee, Maximilian Mundt, Mariano González,</p>
+                            <p>Harki Bhambra, Lindsay Pattison, Théo Christine,</p>
+                            <p>Nikhil Parmar, Richard Cambridge</p><br>
+
+                    <div class="Production">
+                        <p>Production:</p><p>PlayStation Productions, 2.0 Entertainment, Columbia Pictures</p><br><br>
+                    </div>        
+
+                            <button id="scrollButton">zum Film</button><br>
+                        </div>
+                    </div>
+                 </div>
+    </main>
+
+    <div class="streifen"></div>
+
+    <br>
+
+    <div class="Beschreibung">
+        <h2>Inhaltsangabe</h2>
+        <p>Jann Mardenborough (Archie Madekwe) hat den großen Traum, Rennfahrer zu werden.</p>
+        <p>Einziges Problem: Er hat nicht die finanziellen Mittel, um Teil des elitären Motorsports</p>
+        <p>zu werden - und drückt lediglich an der PlayStation aufs Gaspedal. Doch dann erfolgt die</p>
+        <p>Ankündigung, die sein Leben für immer verändern wird: Der leidenschaftliche „Gran Turismo“-Spieler</p>
+        <p>wird als einer der besten Spieler des Planeten dazu eingeladen, bei einem großen, internationalen</p>
+        <p>Turnier mitzufahren. Als Preis winkt dem Sieger die Möglichkeit, eine Karriere als echter Rennfahrer</p>
+        <p>zu starten! Jann gibt alles - und gewinnt tatsächlich. Doch damit beginnt die wahre Herausforderung</p>
+        <p>erst. Nicht nur sind seine Eltern Steve (Djimon Hounsou) und Lesley Mardenborough (Geri Halliwell Horner)</p>
+        <p>sind besorgt um ihren Schützling, der - zumindest wenn es nach seinem Vater geht - etwas Vernünftiges</p>
+        <p>ernen soll. Auch wird Jann im Rennzirkus alles andere als wohlwollend aufgenommen. Ob er mit der Hilfe seines</p>
+        <p>Mentors Jack Salter (David Harbour) und seines Marketing-Managers Danny Moore (Orlando Bloom) den Durchbruch</p>
+        <p>schaffen kann?</p>
+    </div>
+
+    <br>
+
+    <div class="streifen"></div>
+
+    <div class="trailer">
+        <p>Trailer:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0ioLL_SW4_Y?si=DltX9fJegpcLDPOZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="streifen"></div>
+    
+
+    <div class="video" id="video">
+        <p>Stream in HD:</p>
+        <iframe width="640" height="360" src="https://mp4player.site/watch?v=XB5KY2LT" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+
+</body>
+</html> 
